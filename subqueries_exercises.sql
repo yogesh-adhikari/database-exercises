@@ -6,3 +6,14 @@ WHERE hire_date IN (
     WHERE emp_no = 101010
 );
 
+SELECT title
+from titles
+where emp_no IN (
+    select emp_no
+    from employees
+    where first_name = 'Aamod'
+    );
+
+
+
+
